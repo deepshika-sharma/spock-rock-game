@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spock Rock Game</title>
+    <script
+      src="https://kit.fontawesome.com/6c85aef8db.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h1>Rock Paper Scissors Lizard Spock</h1>
+      </div>
+      <div class="game-section">
+        <div class="player">
+          <p>
+            You - <span class="player-score">0</span
+            ><span class="player-action"></span>
+          </p>
+          <div class="player-actions">
+            <i title="rock" class="far fa-hand-rock player-rock"></i>
+            <i title="paper" class="far fa-hand-paper player-paper"></i>
+            <i
+              title="scissors"
+              class="far fa-hand-scissors player-scissors"
+            ></i>
+            <i title="lizard" class="far fa-hand-lizard player-lizard"></i>
+            <i title="spock" class="far fa-hand-spock player-spock"></i>
+          </div>
+        </div>
+        <div class="computer">
+          <p>
+            Computer - <span class="computer-score">0</span
+            ><span class="computer-action"></span>
+          </p>
+          <div class="computer-actions">
+            <i title="rock" class="far fa-hand-rock computer-rock"></i>
+            <i title="paper" class="far fa-hand-paper computer-paper"></i>
+            <i
+              title="scissors"
+              class="far fa-hand-scissors computer-scissors"
+            ></i>
+            <i title="lizard" class="far fa-hand-lizard computer-lizard"></i>
+            <i title="spock" class="far fa-hand-spock computer-spock"></i>
+          </div>
+        </div>
+        <div class="reset">
+          <i title="reset" class="fas fa-sync-alt"></i>
+        </div>
+        <div class="game-results"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

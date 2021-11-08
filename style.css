@@ -1,0 +1,83 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: rgba(106, 212, 198, 0.87);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-family: Roboto, sans-serif;
+}
+
+/* Container */
+.container {
+  /* border: 3px solid black; */
+  width: 50%;
+  background: lightgrey;
+  border-radius: 10px;
+  box-shadow: 2px 2px 20px 2px grey;
+}
+
+h1 {
+  text-align: center;
+  background: pink;
+  margin: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  font-size: 30px;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+}
+
+i {
+  font-size: 40px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.game-section {
+  margin: 10px;
+}
+
+/* Player */
+.player-actions {
+  color: blue;
+}
+
+/* Computer */
+.computer-actions {
+  color: red;
+}
+
+.player-action,
+.computer-action {
+  color: yellowgreen;
+}
+
+/* Reset */
+.fa-sync-alt {
+  margin-top: 20px;
+}
+
+/* Results */
+.game-results {
+  text-align: center;
+  font-size: 30px;
+}
+
+/* Media Query */
+@media screen and (max-width: 800px) {
+  .container {
+    width: 90%;
+    height: auto;
+  }
+}
