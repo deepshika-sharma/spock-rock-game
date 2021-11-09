@@ -129,36 +129,51 @@ const playerVsComputer = (playerHand) => {
 
   // Action
   if (playerHand === "player-rock") {
-    playerAction.textContent = " ---Rock";
+    playerAction.textContent = " --- Rock";
   }
   if (playerHand === "player-paper") {
-    playerAction.textContent = " ---Paper";
+    playerAction.textContent = " --- Paper";
   }
   if (playerHand === "player-scissors") {
-    playerAction.textContent = " ---Scissors";
+    playerAction.textContent = " --- Scissors";
   }
   if (playerHand === "player-lizard") {
-    playerAction.textContent = " ---Lizard";
+    playerAction.textContent = " --- Lizard";
   }
   if (playerHand === "player-spock") {
-    playerAction.textContent = " ---Spock";
+    playerAction.textContent = " --- Spock";
   }
 
   if (computerHand.classList.contains("computer-rock")) {
-    computerAction.textContent = " ---Rock";
+    computerAction.textContent = " --- Rock";
   }
   if (computerHand.classList.contains("computer-paper")) {
-    computerAction.textContent = " ---Paper";
+    computerAction.textContent = " --- Paper";
   }
   if (computerHand.classList.contains("computer-scissors")) {
-    computerAction.textContent = " ---Scissors";
+    computerAction.textContent = " --- Scissors";
   }
   if (computerHand.classList.contains("computer-lizard")) {
-    computerAction.textContent = " ---Lizard";
+    computerAction.textContent = " --- Lizard";
   }
   if (computerHand.classList.contains("computer-spock")) {
-    computerAction.textContent = " ---Spock";
+    computerAction.textContent = " --- Spock";
   }
+};
+
+// Reset
+const resetGame = () => {
+  playerCount = 0;
+  computerCount = 0;
+  playerScore.textContent = playerCount;
+  computerScore.textContent = computerCount;
+  for (let i = 0; i < playerActions.length; i++) {
+    playerActions[i].style.color = "blue";
+    computerActions[i].style.color = "red";
+  }
+  gameResults.textContent = "";
+  playerAction.textContent = " --- Choice";
+  computerAction.textContent = " --- Choice";
 };
 
 // Event Listeners
@@ -184,16 +199,4 @@ playerSpock.addEventListener("click", () => {
 });
 
 // --> Reset
-reset.addEventListener("click", () => {
-  playerCount = 0;
-  computerCount = 0;
-  playerScore.textContent = playerCount;
-  computerScore.textContent = computerCount;
-  for (let i = 0; i < playerActions.length; i++) {
-    playerActions[i].style.color = "blue";
-    computerActions[i].style.color = "red";
-  }
-  gameResults.textContent = "";
-  playerAction.textContent = "";
-  computerAction.textContent = "";
-});
+reset.addEventListener("click", resetGame);

@@ -20,28 +20,31 @@ body {
 
 /* Container */
 .container {
-  /* border: 3px solid black; */
-  width: 50%;
+  width: 40%;
   background: lightgrey;
   border-radius: 10px;
   box-shadow: 2px 2px 20px 2px grey;
 }
 
-h1 {
-  text-align: center;
-  background: pink;
-  margin: 0;
+.heading {
+  padding: 5px;
+  background: rgb(168, 42, 141);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  text-align: center;
+}
+
+h2 {
+  margin: 0;
   font-size: 30px;
   letter-spacing: 1px;
   word-spacing: 5px;
+  color: whitesmoke;
 }
 
 i {
   font-size: 40px;
-  cursor: pointer;
-  margin: 5px;
+  user-select: none;
 }
 
 .game-section {
@@ -51,27 +54,38 @@ i {
 /* Player */
 .player-actions {
   color: blue;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /* Computer */
 .computer-actions {
   color: red;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.player-action,
+.player-action {
+  color: blue;
+}
+
 .computer-action {
-  color: yellowgreen;
+  color: red;
 }
 
 /* Reset */
 .fa-sync-alt {
   margin-top: 20px;
+  cursor: pointer;
 }
 
 /* Results */
 .game-results {
   text-align: center;
   font-size: 30px;
+  margin: 0;
+  height: 50px;
 }
 
 /* Media Query */
